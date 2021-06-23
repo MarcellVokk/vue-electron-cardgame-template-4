@@ -1,0 +1,239 @@
+.card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) -5px 0px 10px -2px;
+  transition: 0.2s;
+  width: 110px;
+  height: 175px;
+  padding: 3px;
+  margin: 2px;
+  margin-left: -50px;
+  justify-content: space-evenly;
+}
+
+.oponent_card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) -5px 0px 10px -2px;
+  transition: 0.2s;
+  width: 80px;
+  height: 150px;
+  padding: 3px;
+  margin: 2px;
+  margin-left: -41px;
+  justify-content: space-evenly;
+}
+
+.card:not(:first-child){
+  margin-left: -50px;
+}
+
+.card:hover{
+  transform: translateY(-2rem);
+  box-shadow: rgb(255, 238, 0) 0px 0px 15px 5px;
+
+  ~ .card{
+    transform: translateX(10px);
+  }
+}
+
+.drawCardAnim{
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 5px;
+  transition: 0.2s;
+  height: 180px;
+  width: 130px;
+  transform: translate(-150px, -400px);
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+}
+  
+.menuCard{
+  background-color: rgb(255, 255, 255);
+  height: 280px;
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px 5px;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuCard:not(:first-child){
+  margin-left: -20px;
+}
+
+.menuCard:hover{
+  transform: translateY(-2rem);
+  box-shadow: rgb(255, 238, 0) 0px 0px 15px 5px;
+
+  ~ .menuCard{
+    transform: translateX(10px);
+  }
+}
+
+.quitButton{
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 0px;
+  top: 0px
+}
+
+.addCardButton{
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 105px;
+  top: 0px
+}
+
+.addOpponentCardButton{
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 210px;
+  top: 0px
+}
+
+.addTopCardButton{
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 315px;
+  top: 0px
+}
+
+.addRightCardButton{
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 420px;
+  top: 0px
+}
+
+.lastPlayerCard{
+  display: flex;
+  position: absolute;
+  background-color: coral;
+  justify-content: center;
+  text-align: center;
+  background-image: url("./logo.png");
+  height: 215px;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gameScene{
+  
+}
+  
+.title{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cards{
+  //background-color: lawngreen;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 160px;
+  height: 220px;
+  transform: translate(0%, 34vh);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,  minmax(1px, 2px));
+}
+
+.cards_left{
+  //background-color: lawngreen;
+  justify-content: space-evenly;
+  align-content: center;
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  padding-right: 0px;
+  //transform: translate(0%, 36vh);
+  transform: rotate(90deg) translate(-32vh, 32vh);
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,  minmax(0px, 1px));
+}
+
+.cards_top{
+  //background-color: lawngreen;
+  justify-content: space-evenly;
+  align-content: center;
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  padding-right: 0px;
+  //transform: translate(0%, 36vh);
+  transform: rotate(180deg) translate(-32vh, 32vh);
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,  minmax(0px, 1px));
+}
+
+.cards_right{
+  //background-color: lawngreen;
+  justify-content: space-evenly;
+  align-content: center;
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  padding-right: 0px;
+  //transform: translate(0%, 36vh);
+  transform: rotate(270deg) translate(36vh, 97vh);
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,  minmax(0px, 1px));
+}
+
+.menuCards{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  //align-content: center;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+}
+  
