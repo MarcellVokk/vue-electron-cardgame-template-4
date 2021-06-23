@@ -1,2 +1,21 @@
-# vue-electron-cardgame-template-4
-Card game tamplate 4 player vue.js electron (npm install before run)
+# M_edit code editor
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run electron:serve
+```
+
+### Compiles and minifies for production
+```
+npm run electron:build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
